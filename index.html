@@ -4,15 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>Hello HTML!</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314_1280.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: lightblue;  /* If image is unavailable*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: rgb(42, 42, 42, 0.4);
+            text-align: center;
+            padding: 2px;
+            height: 40px;
+        }
+
+        h1{
+            padding: 10px;
+            margin: 5px; 
+        }
+
+        .topnav{
+            background-color: rgb(42, 42, 42, 0.4);
+            overflow: hidden; 
+            height: 60px;
+            display: flex;
+            justify-content:left;
+            align-items: center;
+        }
+
+        .topnav a {
+        float:left;
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        margin: 20px;
+        width: 40px;
+        font-size: larger;
+        }
+
+        .topnav a:hover {
+        color: white;
+        transform: scale(1.2, 1.2);
+        }
+
+        footer{
+            background-color: rgb(42, 42, 42, 0.4);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+    
+
+    </style>
 </head>
 <body>
-    <h1>My first Hosted Webpage</h1>
-    <p>Welcome!</p>
-   
-    <img src="./koira.jpg" alt="An image">
-    <p>Here's a doggo for you</p>
+    <header>
+        <h1>Header</h1>
+    </header>
 
-    <p>Check out my <a href="https://www.linkedin.com/in/joanne-hoikka-809619257/">LinkedIn Profile</a> for more information.</p>
+    <nav class="topnav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>  
+    </nav>
+
+
+    <article>
+        <h1>Hello HTML</h1>
+        <p>I am a web developer!</p>
+        <p>I ROCK 😈😈</p>
+        <p>Check out my <a href="https://www.linkedin.com/in/joanne-hoikka-809619257/">LinkedIn Profile</a> for more information.</p>
+    </article>
+    
+
+    <footer>
+        Contact information
+    </footer>
 </body>
 </html>
+
+    
